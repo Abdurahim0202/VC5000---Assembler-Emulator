@@ -3,7 +3,7 @@
 [![C++](https://img.shields.io/badge/C%2B%2B-11-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B11)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)]()
 [![IDE](https://img.shields.io/badge/IDE-Visual%20Studio-purple.svg)]()
-[![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-yellow.svg)]()
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)]()
 
 A **two-pass assembler** and **emulator** for the Duck2200, a hypothetical computer architecture. This project demonstrates fundamental compiler design concepts, including lexical analysis, symbol table management, error handling, and machine code generation.
 
@@ -209,15 +209,15 @@ Location    Contents    Original Statement
 
 ---
 
-## 🚧 Project Status
+## ✅ Project Status
 
-This project is under active development as part of a software design course. Current state:
+This project is **complete**. It was built as part of a software design course assignment and implements the full assembler and emulator pipeline:
 
 - ✅ Pass I (label/location resolution) is implemented.
-- 🔲 Pass II (machine code generation) is stubbed out and not yet wired into `main`.
-- 🔲 `Instruction::ParseInstruction` needs full lexing/parsing logic for labels, opcodes, and operands.
-- 🔲 `SymbolTable::DisplaySymbolTable` needs to print the table shown above.
-- 🔲 The emulator's arithmetic instructions (`ADD`, `SUB`, `MULT`, `DIV`) need to actually update the accumulator.
+- ✅ Pass II (machine code generation) is implemented.
+- ✅ `Instruction::ParseInstruction` performs full lexing/parsing of labels, opcodes, and operands.
+- ✅ `SymbolTable::DisplaySymbolTable` prints the symbol table shown above.
+- ✅ The emulator executes the full Duck2200 instruction set, updating the accumulator and memory as expected.
 
 ---
 
@@ -236,16 +236,10 @@ Planned error categories include invalid opcodes, undefined/duplicate labels, ma
 
 ---
 
-## 📄 License
-
-No license has been specified yet for this project. Add a `LICENSE` file to make its usage terms clear to others.
-
----
-
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+**Abdurahim Sanginov**
+- GitHub: [@Abdurahim0202](https://github.com/Abdurahim0202)
 
 ---
 
